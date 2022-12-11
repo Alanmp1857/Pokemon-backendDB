@@ -14,6 +14,14 @@ mongoose
   });
 
 const pokemonSchema = mongoose.Schema({
+  id: {
+    type: Number,
+    required: true,
+    unique: true,
+  },
+  imageUrl: {
+    type: String,
+  },
   name: {
     type: String,
     required: true,
