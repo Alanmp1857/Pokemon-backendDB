@@ -13,44 +13,48 @@ mongoose
   });
 
 const movesSchema = mongoose.Schema({
-  id: {
+  Id: {
     type: Number,
     required: true,
+    unique: true,
   },
-  pokemon: {
+  Pokemon: {
     type: Array,
     required: true,
   },
-  name: {
+  Name: {
+    type: String,
+    required: true,
+    unique: true,
+  },
+  Type: {
     type: String,
     required: true,
   },
-  type: {
+  Category: {
     type: String,
     required: true,
   },
-  damage_class: {
+  Power: {
     type: String,
     required: true,
   },
-  power: {
-    type: Number,
-    required: true,
-  },
-  accuracy: {
-    type: Number,
-    required: true,
-  },
-  short_effect: {
+  Accuracy: {
     type: String,
     required: true,
   },
-  effect_chance: {
-    type: Number,
+  Effect: {
+    type: String,
   },
-  pp: {
-    type: Number,
+  TM: {
+    type: String,
+  },
+  PP: {
+    type: String,
     required: true,
+  },
+  Prob: {
+    type: String,
   },
 });
 
