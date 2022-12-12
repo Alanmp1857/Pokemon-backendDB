@@ -22,4 +22,13 @@ async function getAllMoves(req, res) {
   }
 }
 
-module.exports = { addMoves, getAllMoves };
+async function findPokemonMoves(req, res) {
+  try {
+    const pokemon = req.params.pokemon;
+    // const moves=
+  } catch (err) {
+    console.log(err);
+  }
+}
+
+module.exports = { addMoves, getAllMoves, findPokemonMoves };
