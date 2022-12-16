@@ -12,4 +12,6 @@ movesRouter.route("/").post(addMoves);
 
 movesRouter.route("/:pokemon").get(findPokemonMoves);
 
+//Delete duplicate entries in movesdb
+
 module.exports = movesRouter;
